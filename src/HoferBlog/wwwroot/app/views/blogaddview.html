@@ -1,0 +1,7 @@
+﻿<h1>Add blog</h1>
+<div ng-controller="BlogController">
+    <div ng-include="'/app/partials/blog/blogedit.html'">
+    </div>
+    <button type="button" ng-click="createBlog(visitBlog,handleBlogError)" class="btn btn-primary">Create blog</button>
+    <button type="button" class="btn btn-secondary" ng-click="goBack()">Cancel</button>
+</div>

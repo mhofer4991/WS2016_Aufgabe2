@@ -1,0 +1,37 @@
+﻿<!--<div class="card">
+    <div class="card-block">
+        <h4 class="card-title">{{post.title}}</h4>
+        <h6 class="postDetailsDate" title="{{post.time | date:'MMM dd, yyyy HH:mm'}}">Edited: {{post.time | date}}</h6>
+        <div ng-bind-html="safeText"></div>
+        <div>
+            Tags:
+        </div>
+        <span ng-repeat="tag in post.tags"><a ng-href="/#!/tag/{{tag.name}}">#{{tag.name}}</a> </span>
+    </div>
+</div>-->
+
+
+<div class="card">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item active">
+            <span class="float-right"> 
+                <a class="btn btn-secondary" ng-show="post.canModify" href="/#!/posts/{{post.id}}/edit" role="button">Edit</a>
+            </span>
+            <h1>{{post.title}}</h1>
+        </li>
+        <li class="list-group-item">
+            Blog:
+            <a class="btn btn-secondary" href="/#!/blogs/{{post.blogID}}" role="button">See blog</a>
+        </li>
+        <li class="list-group-item">
+            <div ng-bind-html="safeText"></div>
+            <h6 class="postDetailsDate" title="{{post.time | date:'MMM dd, yyyy HH:mm'}}">Edited: {{post.time | date}}</h6>
+        </li>
+        <li class="list-group-item">
+            <span>
+                Tags:
+            </span>
+            <span ng-repeat="tag in post.tags"><a ng-href="/#!/tag/{{tag.name}}">#{{tag.name}}</a> </span>
+        </li>
+    </ul>
+</div>

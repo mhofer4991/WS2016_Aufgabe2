@@ -1,0 +1,9 @@
+﻿<div class="jumbotron">
+    <h1 class="display-3">Welcome to HoferBlog!</h1>
+    <p class="lead">This is a simple blog, where you can add simple posts with simple tags by simple users.</p>
+    <hr class="my-4">
+    <p>It uses not so simple technologies like ASP MVC Entity Framework Core.</p>
+</div>
+<h2>Latest posts</h2>
+<div ng-include="'/app/partials/post/postlist.html'" ng-init="posts=latestPosts">
+</div>

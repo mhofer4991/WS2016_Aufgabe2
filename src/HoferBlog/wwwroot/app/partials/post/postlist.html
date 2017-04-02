@@ -1,0 +1,21 @@
+﻿<div ng-controller="PostFilterController">
+    <div class="form-inline">
+        Filter By:
+        <select class="custom-select" ng-model="filterMode" ng-options="x.description for x in filterModes"></select>
+        <input class="form-control" type="text" ng-model="filterText" />
+        <span class="float-lg-right">
+            Order By:
+            <select class="custom-select" ng-model="sortMode" ng-options="x.description for x in sortModes"></select>
+            <select class="custom-select" ng-model="orderMode" ng-options="x.description for x in orderModes"></select>
+        </span>
+    </div>
+    <div ng-controller="PageController">
+        <div ng-repeat="post in (list = (posts | filter: filterText | filter: filterMode.expression() | orderBy: customOrdering())) | limitTo: from | limitTo: to">
+            <div ng-controller="PostController" ng-include="'/app/partials/post/postlistitem.html'">
+            </div>
+        </div>
+        <div ng-include="'/app/partials/page/pageselect.html'">
+
+        </div>
+    </div>
+</div>

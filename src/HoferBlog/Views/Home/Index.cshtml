@@ -1,0 +1,13 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+<div>
+    <div ng-controller="AlertController">
+        <div ng-include="'/app/partials/alert/alertlist.html'"></div>
+
+        <div ng-view></div>
+    </div>
+</div>

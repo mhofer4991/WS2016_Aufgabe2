@@ -1,0 +1,23 @@
+﻿<h1>Archive</h1>
+<div>
+    <div class="form-group row form-inline">
+        <label class="col-2 col-form-label">Year</label>
+        <div class="col-10">
+            <button class="btn btn-secondary" ng-click="previousYear()">Previous</button>
+            <input class="form-control" type="text" ng-model="year">
+            <button class="btn btn-secondary" ng-click="nextYear()">Next</button>
+        </div>
+    </div>
+    <div class="form-group row form-inline">
+        <label class="col-2 col-form-label">Month</label>
+        <div class="col-10">
+            <button class="btn btn-secondary" ng-click="previousMonth()">Previous</button>
+            <input class="form-control" type="text" ng-model="month">
+            <button class="btn btn-secondary" ng-click="nextMonth()">Next</button>
+        </div>
+    </div>
+    <button class="btn btn-primary" ng-click="visitArchive()">See archive</button>
+</div>
+<h2>Posts</h2>
+<div ng-include="'/app/partials/post/postlist.html'">
+</div>

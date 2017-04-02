@@ -1,0 +1,11 @@
+﻿<div class="card">
+    <div class="card-block">
+        <a ng-href="#!/blogs/{{blog.id}}"><h1 class="card-title">{{blog.name}}</h1></a>
+        <div>            
+            Posts: {{blog.postsCount}}
+        </div>
+    </div>
+    <div class="card-footer text-muted">
+        <span title="{{blog.lastEdited | date:'MMM dd, yyyy HH:mm'}}">Last post: {{blog.lastEdited | date}}</span>
+    </div>
+</div>

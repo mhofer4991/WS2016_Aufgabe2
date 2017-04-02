@@ -1,0 +1,14 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "jquery": "2.2.3",
+    "bootstrap": "3.3.6",
+    "font-awesome": "4.6.1",
+    "angular": "1.6.1",
+    "ngquill": "2.0.2"
+  },
+  "resolutions": {
+    "angular": ">=1.3.x"
+  }
+}

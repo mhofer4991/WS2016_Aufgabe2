@@ -1,0 +1,15 @@
+﻿<div class="card">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item active">
+            <h4>{{blog.name}}</h4>
+        </li>
+        <li class="list-group-item">Author: <a ng-href="/#!/users/{{blog.userName}}">{{blog.userName}}</a></li>
+        <li class="list-group-item">Posts: {{blog.posts.length}}</li>
+        <li ng-show="blog.canModify" class="list-group-item">
+            <div>
+                <a class="btn btn-secondary" href="/#!/blogs/{{blog.id}}/posts/add" role="button">Add post</a>
+                <a class="btn btn-secondary" href="/#!/blogs/{{blog.id}}/edit" role="button">Edit</a>
+            </div>
+        </li>
+    </ul>
+</div>

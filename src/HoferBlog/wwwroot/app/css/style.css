@@ -1,0 +1,20 @@
+﻿.htag:hover
+{
+    text-decoration: line-through;
+    color: red;
+}
+
+[ng-quill-editor] {
+    display: block;
+}
+
+.postTextPreview
+{
+    max-height: 80px;
+    overflow: hidden;
+}
+
+.postDetailsDate
+{
+    color: darkgray;
+}
